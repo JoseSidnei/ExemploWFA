@@ -1,0 +1,14 @@
+C:\Users\104895\Documents\GitHub\ExemploWFA\ExemploWFA\bin\Debug\ExemploWFA.exe.config
+C:\Users\104895\Documents\GitHub\ExemploWFA\ExemploWFA\bin\Debug\ExemploWFA.exe
+C:\Users\104895\Documents\GitHub\ExemploWFA\ExemploWFA\bin\Debug\ExemploWFA.pdb
+C:\Users\104895\Documents\GitHub\ExemploWFA\ExemploWFA\obj\Debug\ExemploWFA.csprojResolveAssemblyReference.cache
+C:\Users\104895\Documents\GitHub\ExemploWFA\ExemploWFA\obj\Debug\ExemploWFA.Properties.Resources.resources
+C:\Users\104895\Documents\GitHub\ExemploWFA\ExemploWFA\obj\Debug\ExemploWFA.csproj.GenerateResource.Cache
+C:\Users\104895\Documents\GitHub\ExemploWFA\ExemploWFA\obj\Debug\ExemploWFA.exe
+C:\Users\104895\Documents\GitHub\ExemploWFA\ExemploWFA\obj\Debug\ExemploWFA.pdb
+C:\Users\104895\Documents\GitHub\ExemploWFA\ExemploWFA\obj\Debug\ExemploWFA.Exemplo02.resources
+C:\Users\104895\Documents\GitHub\ExemploWFA\ExemploWFA\obj\Debug\ExemploWFA.Exemplo03.resources
+C:\Users\104895\Documents\GitHub\ExemploWFA\ExemploWFA\obj\Debug\ExemploWFA.Exemplo04.resources
+C:\Users\104895\Documents\GitHub\ExemploWFA\ExemploWFA\obj\Debug\ExemploWFA.Exemplo05.resources
+C:\Users\104895\Documents\GitHub\ExemploWFA\ExemploWFA\obj\Debug\ExemploWFA.Exemplo01.resources
+C:\Users\104895\Documents\GitHub\ExemploWFA\ExemploWFA\obj\Debug\ExemploWFA.Principal.resources
