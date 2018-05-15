@@ -48,6 +48,12 @@ namespace ExemploWFA
             exemplo05.Show();
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Exemplo06 exemplo06 = new Exemplo06();
+            exemplo0.Show();
+        }
+
 
     }
 }
