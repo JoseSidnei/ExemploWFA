@@ -43,8 +43,8 @@
             this.txtNota4 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.txtResultado = new System.Windows.Forms.Label();
-            this.textao = new System.Windows.Forms.TextBox();
+            this.rsult = new System.Windows.Forms.Label();
+            this.txtResultado = new System.Windows.Forms.TextBox();
             this.txtIdade = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -207,24 +207,24 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // rsult
+            // 
+            this.rsult.AutoSize = true;
+            this.rsult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rsult.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rsult.Location = new System.Drawing.Point(443, 220);
+            this.rsult.Name = "rsult";
+            this.rsult.Size = new System.Drawing.Size(77, 18);
+            this.rsult.TabIndex = 16;
+            this.rsult.Text = "Resutado";
+            // 
             // txtResultado
             // 
-            this.txtResultado.AutoSize = true;
-            this.txtResultado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultado.Location = new System.Drawing.Point(443, 220);
+            this.txtResultado.Location = new System.Drawing.Point(443, 241);
+            this.txtResultado.Multiline = true;
             this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(77, 18);
-            this.txtResultado.TabIndex = 16;
-            this.txtResultado.Text = "Resutado";
-            // 
-            // textao
-            // 
-            this.textao.Location = new System.Drawing.Point(443, 241);
-            this.textao.Multiline = true;
-            this.textao.Name = "textao";
-            this.textao.Size = new System.Drawing.Size(329, 150);
-            this.textao.TabIndex = 17;
+            this.txtResultado.Size = new System.Drawing.Size(329, 150);
+            this.txtResultado.TabIndex = 17;
             // 
             // txtIdade
             // 
@@ -252,8 +252,8 @@
             this.ClientSize = new System.Drawing.Size(1375, 536);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtIdade);
-            this.Controls.Add(this.textao);
             this.Controls.Add(this.txtResultado);
+            this.Controls.Add(this.rsult);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtNota4);
             this.Controls.Add(this.label6);
@@ -294,8 +294,8 @@
         private System.Windows.Forms.TextBox txtNota4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label txtResultado;
-        private System.Windows.Forms.TextBox textao;
+        private System.Windows.Forms.Label rsult;
+        private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.TextBox txtIdade;
         private System.Windows.Forms.Label label7;
     }

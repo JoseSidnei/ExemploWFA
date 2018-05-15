@@ -51,6 +51,7 @@
             this.rbMedia = new System.Windows.Forms.RadioButton();
             this.rbMenor = new System.Windows.Forms.RadioButton();
             this.rbMaior = new System.Windows.Forms.RadioButton();
+            this.lbValorTotal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidade1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidade2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidade3)).BeginInit();
@@ -73,7 +74,7 @@
             this.txtNome1.Location = new System.Drawing.Point(12, 114);
             this.txtNome1.Name = "txtNome1";
             this.txtNome1.Size = new System.Drawing.Size(279, 22);
-            this.txtNome1.TabIndex = 1;
+            this.txtNome1.TabIndex = 5;
             // 
             // label2
             // 
@@ -92,7 +93,7 @@
             this.nudQuantidade1.Location = new System.Drawing.Point(308, 114);
             this.nudQuantidade1.Name = "nudQuantidade1";
             this.nudQuantidade1.Size = new System.Drawing.Size(120, 22);
-            this.nudQuantidade1.TabIndex = 5;
+            this.nudQuantidade1.TabIndex = 6;
             // 
             // label3
             // 
@@ -113,6 +114,7 @@
             this.mtbValor1.Name = "mtbValor1";
             this.mtbValor1.Size = new System.Drawing.Size(100, 22);
             this.mtbValor1.TabIndex = 7;
+            this.mtbValor1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mtbValor1_KeyDown);
             // 
             // mtbValor2
             // 
@@ -121,7 +123,7 @@
             this.mtbValor2.Mask = "990.00";
             this.mtbValor2.Name = "mtbValor2";
             this.mtbValor2.Size = new System.Drawing.Size(100, 22);
-            this.mtbValor2.TabIndex = 13;
+            this.mtbValor2.TabIndex = 10;
             // 
             // label4
             // 
@@ -140,7 +142,7 @@
             this.nudQuantidade2.Location = new System.Drawing.Point(308, 168);
             this.nudQuantidade2.Name = "nudQuantidade2";
             this.nudQuantidade2.Size = new System.Drawing.Size(120, 22);
-            this.nudQuantidade2.TabIndex = 11;
+            this.nudQuantidade2.TabIndex = 9;
             // 
             // label5
             // 
@@ -159,7 +161,7 @@
             this.txtNome2.Location = new System.Drawing.Point(12, 168);
             this.txtNome2.Name = "txtNome2";
             this.txtNome2.Size = new System.Drawing.Size(279, 22);
-            this.txtNome2.TabIndex = 9;
+            this.txtNome2.TabIndex = 8;
             // 
             // label6
             // 
@@ -179,7 +181,7 @@
             this.mtbValor3.Mask = "990.00";
             this.mtbValor3.Name = "mtbValor3";
             this.mtbValor3.Size = new System.Drawing.Size(100, 22);
-            this.mtbValor3.TabIndex = 19;
+            this.mtbValor3.TabIndex = 13;
             // 
             // label7
             // 
@@ -198,7 +200,7 @@
             this.nudQuantidade3.Location = new System.Drawing.Point(308, 221);
             this.nudQuantidade3.Name = "nudQuantidade3";
             this.nudQuantidade3.Size = new System.Drawing.Size(120, 22);
-            this.nudQuantidade3.TabIndex = 17;
+            this.nudQuantidade3.TabIndex = 12;
             // 
             // label8
             // 
@@ -217,7 +219,7 @@
             this.txtNome3.Location = new System.Drawing.Point(12, 221);
             this.txtNome3.Name = "txtNome3";
             this.txtNome3.Size = new System.Drawing.Size(279, 22);
-            this.txtNome3.TabIndex = 15;
+            this.txtNome3.TabIndex = 11;
             // 
             // label9
             // 
@@ -238,7 +240,7 @@
             this.btnExecutar.Location = new System.Drawing.Point(410, 307);
             this.btnExecutar.Name = "btnExecutar";
             this.btnExecutar.Size = new System.Drawing.Size(136, 53);
-            this.btnExecutar.TabIndex = 20;
+            this.btnExecutar.TabIndex = 14;
             this.btnExecutar.Text = "Executar";
             this.btnExecutar.UseVisualStyleBackColor = false;
             this.btnExecutar.Click += new System.EventHandler(this.btnExecutar_Click);
@@ -250,7 +252,7 @@
             this.rbSomar.Location = new System.Drawing.Point(32, 23);
             this.rbSomar.Name = "rbSomar";
             this.rbSomar.Size = new System.Drawing.Size(71, 20);
-            this.rbSomar.TabIndex = 21;
+            this.rbSomar.TabIndex = 1;
             this.rbSomar.TabStop = true;
             this.rbSomar.Text = "Somar";
             this.rbSomar.UseVisualStyleBackColor = true;
@@ -262,7 +264,7 @@
             this.rbMedia.Location = new System.Drawing.Point(123, 23);
             this.rbMedia.Name = "rbMedia";
             this.rbMedia.Size = new System.Drawing.Size(69, 20);
-            this.rbMedia.TabIndex = 22;
+            this.rbMedia.TabIndex = 2;
             this.rbMedia.TabStop = true;
             this.rbMedia.Text = "Média";
             this.rbMedia.UseVisualStyleBackColor = true;
@@ -274,7 +276,7 @@
             this.rbMenor.Location = new System.Drawing.Point(214, 23);
             this.rbMenor.Name = "rbMenor";
             this.rbMenor.Size = new System.Drawing.Size(69, 20);
-            this.rbMenor.TabIndex = 23;
+            this.rbMenor.TabIndex = 3;
             this.rbMenor.TabStop = true;
             this.rbMenor.Text = "Menor";
             this.rbMenor.UseVisualStyleBackColor = true;
@@ -286,16 +288,27 @@
             this.rbMaior.Location = new System.Drawing.Point(305, 23);
             this.rbMaior.Name = "rbMaior";
             this.rbMaior.Size = new System.Drawing.Size(65, 20);
-            this.rbMaior.TabIndex = 24;
+            this.rbMaior.TabIndex = 4;
             this.rbMaior.TabStop = true;
             this.rbMaior.Text = "Maior";
             this.rbMaior.UseVisualStyleBackColor = true;
+            // 
+            // lbValorTotal
+            // 
+            this.lbValorTotal.AutoSize = true;
+            this.lbValorTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbValorTotal.Location = new System.Drawing.Point(641, 122);
+            this.lbValorTotal.Name = "lbValorTotal";
+            this.lbValorTotal.Size = new System.Drawing.Size(91, 20);
+            this.lbValorTotal.TabIndex = 19;
+            this.lbValorTotal.Text = "ValorTotal";
             // 
             // Exemplo03
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(819, 650);
+            this.Controls.Add(this.lbValorTotal);
             this.Controls.Add(this.rbMaior);
             this.Controls.Add(this.rbMenor);
             this.Controls.Add(this.rbMedia);
@@ -354,5 +367,6 @@
         private System.Windows.Forms.RadioButton rbMedia;
         private System.Windows.Forms.RadioButton rbMenor;
         private System.Windows.Forms.RadioButton rbMaior;
+        private System.Windows.Forms.Label lbValorTotal;
     }
 }

@@ -107,5 +107,23 @@ namespace ExemploWFA
             }
             MessageBox.Show("Maior valor: " + maiorValor);
         }
+
+        private void mtbValor1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                int quantidade = Convert.ToInt32(nudQuantidade1.Value);
+                double valor = Convert.ToDouble(mtbValor1.Text);
+                double valorTotal = quantidade * valor;
+                lbValorTotal.Text = Convert.ToString(valorTotal);
+                btnExecutar.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad9 && e.KeyCode != Keys.NumPad8)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+       
     }
 }

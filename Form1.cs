@@ -25,14 +25,14 @@ namespace ExemploWFA
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Olá Mundo");
-            MessageBox.Show("A soma é: " + (2 + 2));
+            MessageBox.Show("A soma é:  "  +  (2 + 2));
         }
 
         private void btnConcatenar_Click(object sender, EventArgs e)
         {
             string nomeDoUsuario = txtNome.Text;
             string sobrenomeDoUsuario = txtSobrenome.Text;
-            MessageBox.Show(nomeDoUsuario + "" + sobrenomeDoUsuario);
+            MessageBox.Show(nomeDoUsuario + " " + sobrenomeDoUsuario);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -86,7 +86,7 @@ namespace ExemploWFA
             string textao = string.Format("Nota 1: {0}\r\nNota 2: {1}\r\nNota 3: {2}\r\nNota 4: {3}\r\n\nMédia: {4}", 
                                            nota1, nota2, nota3, nota4, media);
 
-            txtResultado.Text = textao;
+            rsult.Text = textao;
 //          MessageBox.Show
             
 
